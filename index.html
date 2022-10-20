@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Visualpharm-Finance-Invoice.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário para preenchimento e coleta de dados cadastrais</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="inome">Nome:</label> <input autocomplete="username" placeholder="Digite o seu nome" minlength="3" maxlength="33" required type="text" name="inome" id="inome"></p>
+
+            <p><label for="iemail">E-mail:</label> <input required placeholder="Digite o seu e-mail" autocomplete="email" type="email" name="iemail" id="iemail"></p>
+
+            <p><label for="itelefone">Telefone:</label> <input pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(xx)xxxx-xxxx"  required type="tel" name="itelefone" id="itelefone"></p>
+
+        </fieldset>
+
+        <p><label for="ienviar"></label> <input type="submit" value="Enviar"></p>
+
+        <p><label for="ilimpar"></label> <input type="reset" value="Limpar"></p>
+
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

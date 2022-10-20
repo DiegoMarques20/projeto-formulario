@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    padding: 10px;
+    margin: auto;
+}
