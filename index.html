@@ -81,6 +81,22 @@
 
             </select>
 
+            
+            <p><label for="iescoo">Escolaridade</label> <input required type="text" name="iescoo" list="escolaridade" id="iescoo"></p>
+
+            <datalist id="escolaridade">
+                <option>Ensino Fundamental Imcompleto</option>
+                <option>Ensino Fundamental Completo</option>
+                <option>Ensino Médio Imcompleto</option>
+                <option>Ensino Médio Completo</option>
+                <option>Ensino Superior Incompleto</option>
+                <option>Ensino Superior Completo</option>
+                <option>Pós-Graduação Incompleta</option>
+                <option>Pós-Graduação Completa</option>
+                <option>Mestrado</option>
+                <option>Doutorado</option>
+            </datalist>
+
         </fieldset>
 
         <p></p>
@@ -172,6 +188,15 @@
                 <option>Outro</option>
             </datalist>
 
+            <label for="copa">De 0 a 10, qual sua expectativa para o Brasil &#127942; ganhar a copa do mundo de 2022?</label> <input type="range" required min="0" max="10" name="copa" id="copaa" oninput="number.innerHTML= Number(copa.value)" >
+
+            <output id="number">5</output>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Digite um comentário ou deixe uma mensagem para nossa equipe</legend>
+            <label for="texto"></label> <textarea name="texto" placeholder="--Digite aqui sua mensagem--" id="texto" cols="40" rows="10"></textarea>
         </fieldset>
 
         <p><label for="ienviar"></label> <input type="submit" value="Enviar">
