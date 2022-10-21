@@ -21,15 +21,150 @@
 
             <p><label for="itelefone">Telefone:</label> <input pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(xx)xxxx-xxxx"  required type="tel" name="itelefone" id="itelefone"></p>
 
+            <p><label for="inascimento">Data Nascimento:</label> <input required type="date" name="inascimento" id="inascimento"></p>
+
+            <label for="iestado">Estado onde reside:</label>
+            <select name="Estado" id="iestado" option required  >
+                <option value="">--Escolha Seu Estado--</option>
+
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PR">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná </option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul </option>
+                </optgroup>
+
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás </option>
+                    <option value="MT">Mato Grosso </option>
+                    <option value="MS">Mato Grosso do Sul </option>
+                    <option value="DF">Distrito Federal  </option>
+                </optgroup>
+
+                <optgroup label="Norte">
+                    <option value="">Amazonas </option>
+                    <option value="">Pará </option>
+                    <option value="">Acre </option>
+                    <option value="">Roraima </option>
+                    <option value="">Rondônia </option>
+                    <option value="">Amapá  </option>
+                    <option value="">Tocantins  </option>
+                </optgroup>
+
+            </select>
+
         </fieldset>
 
-        <p><label for="ienviar"></label> <input type="submit" value="Enviar"></p>
-
-        <p><label for="ilimpar"></label> <input type="reset" value="Limpar"></p>
+        <p></p>
 
         <fieldset>
-            <legend></legend>
+            <legend>Sexo</legend>
+            <p><label for="imasculino">Masculino</label> <input value="M" type="radio" name="isexo" id="imasculino"></p>
+
+            <p><label for="ifeminino">Femino</label> <input value="F" type="radio" name="isexo" id="ifeminino"></p>
+
+            <p><label for="ioutro">Outro</label> <input value="O" type="radio" name="isexo" id="ioutro"></p>
         </fieldset>
+
+        <p></p>
+
+        <fieldset>
+            <legend>Esporte Favorito</legend>
+            <p><label for="ifutebol">Futebol</label> <input type="checkbox" name="ifutebol" id="ifutebol"></p>
+
+            <p><label for="ibasqueste">Basquete</label> <input type="checkbox" name="ibasqueste" id="ibasqueste"></p>
+
+            <p><label for="inatacao">Natação</label> <input type="checkbox" name="inatacao" id="inatacao"></p>
+
+            <p><label for="ivolei">Vôlei</label> <input type="checkbox" name="ivolei" id="ivolei"></p>
+
+            <p><label for="itenis">Tênis</label> <input type="checkbox" name="itenis" id="itenis"></p>
+
+            <p><label for="is">Não me identifico com nenhum esporte</label> <input type="checkbox" name="is" id="is"></p>
+
+            <p><label for="ioutroo">Outro</label> <input type="checkbox" name="ioutro" id="ioutroo"></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Curiosidades</legend>
+
+            <p><label for="itime">Time do Coração:</label> <input required type="text" name="itime" id="itime" list="time"></p>
+
+            <datalist id="time">
+                <option>Atlético-MG
+                </option>
+                <option>América-MG
+                </option>
+                <option>Athletico-PR
+                </option>
+                <option>Atlético-GO
+                </option>
+                <option>Avaí</option>
+                <option>Botafogo
+                </option>
+                <option>Bragantino</option>
+                <option>Corinthians
+                </option>
+                <option>Coritiba</option>
+                <option>Ceará</option>
+                <option>Cuiabá</option>
+                <option>Cruzeiro</option>
+                <option>Flamengo</option>
+                <option>Fluminense</option>
+                <option>Fortaleza</option>
+                <option>Goiás</option>
+                <option>Grêmio</option>
+                <option>Internacional
+                </option>
+                <option>Juventude
+                </option>
+                <option>São Paulo
+                </option>
+                <option>Santos</option>
+                <option>Palmeiras
+                </option>
+                <option>Vasco</option>
+                <option>Outro</option>
+            </datalist>
+
+            <p><label for="iprofissao">Profissão:</label> <input type="text" name="iprofissao" id="iprofissao" list="profissao" required></p>
+
+            <datalist id="profissao">
+                <option>Administrador</option>
+                <option>Advogado</option>
+                <option>Dentista</option>
+                <option>Desenvolvedor</option>
+                <option>Programador</option>
+                <option>Médico</option>
+                <option>Diarista</option>
+                <option>Pedreiro</option>
+                <option>Engenheiro</option>
+                <option>Bancário</option>
+                <option>Outro</option>
+            </datalist>
+
+        </fieldset>
+
+        <p><label for="ienviar"></label> <input type="submit" value="Enviar">
+        <label for="ilimpar"></label> <input type="reset" value="Limpar"></p>
 
     </form>
     
